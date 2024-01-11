@@ -3,7 +3,7 @@
 **LIVE DEMO: https://node-blog-pi.vercel.app**
 
 Full Node.js project. Including 'about' page, blog content and blog post creation.
-On the live project the creation of new posts is blocked for security reasons
+On the live project the creation of new posts is blocked for security reasons.
 
 ## Tech & 3rd party used in the project:
 - [Node.js](https://nodejs.org/)
