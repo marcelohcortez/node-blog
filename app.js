@@ -10,7 +10,7 @@ dotenv.config()
 const app = express();
 
 //connect to mongoDB
-mongoose.connect(process.env.dbURI)
+mongoose.connect(process.env.DBURI)
     .then((result) => {
         //listen for requests
         app.listen(3000);
