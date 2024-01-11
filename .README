@@ -1,6 +1,6 @@
 ## Node Blog
 
-**LIVE DEMO: **
+**LIVE DEMO: https://node-blog-pi.vercel.app**
 
 Full Node.js project. Including 'about' page, blog content and blog post creation.
 On the live project the creation of new posts is blocked for security reasons
@@ -34,4 +34,4 @@ If you are in production you can use the default command:
 npm run start
 ```
 
-**LIVE DEMO: **
+**LIVE DEMO: https://node-blog-pi.vercel.app**
