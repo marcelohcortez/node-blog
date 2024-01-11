@@ -22,7 +22,7 @@ app.set("views", __dirname + "/views"); // used for Vercel
 app.set("view engine", "ejs");
 
 //middleware & static files
-app.use(express.static('public'))
+app.use(express.static(__dirname + "/public/")); //user for Vercel
 app.use(express.urlencoded({extended: true}));
 app.use(morgan('dev'));
 
