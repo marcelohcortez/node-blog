@@ -18,12 +18,11 @@ mongoose.connect(process.env.DBURI)
     .catch((err) => console.log(err));
 
 //register view engine
-app.set('view engine', 'ejs');
-//app.set('views', 'myviews'); If need to set a different directory for the views
+//app.set('view engine', 'ejs');
+app.set('views', './views'); //used for Vercel
 
 //middleware & static files
 app.use(express.static('public'))
-app.use(express.static('views'))
 app.use(express.urlencoded({extended: true}));
 app.use(morgan('dev'));
 
