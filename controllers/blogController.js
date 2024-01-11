@@ -27,7 +27,7 @@ const blog_create_get = (req, res) => {
 
 const blog_create_post = (req, res) => {
     const blog = new Blog(req.body);
-    // Deactivate next line to avoid improper content while don't have login
+    // Deactivate next line to avoid improper content while on Vercel
     // blog.save() 
     //     .then((result) => {
     //         res.redirect('/blog');
