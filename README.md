@@ -17,6 +17,7 @@ On the live project the creation of new posts is blocked for security reasons.
 
 # How to run the project:
 - Clone the repository
+- On the 'blogController.js' file, uncomment the block regarding the creation of new posts
 - Edit the .env file to add your 'DBURI' with the database URL
 - If you are not running the project on Vercel: 
   - Delete the file 'vercel.json'
