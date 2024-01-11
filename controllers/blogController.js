@@ -4,7 +4,7 @@ const blog_index = (req, res) => {
     console.log('tried to load blog index')
     Blog.find().sort({ createdAt: -1 })
         .then((result) => {
-            res.render('blog/index.ejs', { title: 'All Posts', blogs: result })
+            res.render('blog/index', { title: 'All Posts', blogs: result })
         })
         .catch((err) => {
             console.log(err)
@@ -15,7 +15,7 @@ const blog_details = (req, res) => {
     const id = req.params.id;
     Blog.findById(id)
     .then((result) => {
-        res.render('blog/details.ejs', { blog: result, title: 'Blog Details' });
+        res.render('blog/details', { blog: result, title: 'Blog Details' });
     })
     .catch((err) => {
         res.status().render('404', {title: 'Blog not found'});
@@ -23,7 +23,7 @@ const blog_details = (req, res) => {
 }
 
 const blog_create_get = (req, res) => {
-    res.render('blog/create.ejs', { title: 'Create' });
+    res.render('blog/create', { title: 'Create' });
 }
 
 const blog_create_post = (req, res) => {

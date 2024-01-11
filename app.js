@@ -18,8 +18,8 @@ mongoose.connect(process.env.DBURI)
     .catch((err) => console.log(err));
 
 //register view engine
-//app.set('view engine', 'ejs');
-app.set('views', './views'); //used for Vercel
+app.set("views", __dirname + "/views"); // used for Vercel
+app.set("view engine", "ejs");
 
 //middleware & static files
 app.use(express.static('public'))
