@@ -1,6 +1,7 @@
 const Blog = require('../models/blog');
 
 const blog_index = (req, res) => {
+    console.log('tried to load blog index')
     Blog.find().sort({ createdAt: -1 })
         .then((result) => {
             res.render('blog/index', { title: 'All Posts', blogs: result })
