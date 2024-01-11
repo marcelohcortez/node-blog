@@ -1,4 +1,3 @@
-export const maxDuration = 30; //used by Vercel
 const dotenv = require('dotenv')
 const express = require('express');
 const morgan = require('morgan');
